@@ -1,0 +1,109 @@
+html,
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url("../img/backgroundImg1.jpeg");
+  background-size: cover;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+header .header-container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+header .header-container h1 {
+  font-size: 90px;
+  text-align: center;
+}
+
+main .diceNumber-section .dice-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+main .diceNumber-section .dice-container .diceNumber-box {
+  border: 2px solid black;
+  height: 200px;
+  width: 200px;
+  font-size: 10rem;
+  text-align: center;
+  margin: 0 0.5rem;
+  padding-top: 1rem;
+}
+
+main .setting-section .set-round {
+  font-size: 30px;
+  text-align: center;
+}
+
+main .setting-section .set-round .set-number {
+  height: 23px;
+  width: 100px;
+}
+
+main .setting-section .run-button {
+  text-align: center;
+  margin: 20px 0;
+}
+
+main .setting-section .run-button button {
+  font-size: 20px;
+  padding: 5px 10px;
+}
+
+main .barChart-section .inner-container {
+  width: 100%;
+}
+
+footer {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+footer p {
+  font-size: 18px;
+  opacity: 0.6;
+}
+
+@media only screen and (max-width: 440px) {
+  header .header-container h1 {
+    font-size: 70px;
+  }
+  main .diceNumber-section .dice-container .diceNumber-box {
+    height: 150px;
+    width: 150px;
+    font-size: 8rem;
+  }
+  main .setting-section .set-round {
+    font-size: 25px;
+  }
+  main .barChart-section .inner-container {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+/*# sourceMappingURL=style.css.map */

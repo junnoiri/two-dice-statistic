@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+  </head>
+  <body>
+    <div class="container-flex">
+      <header>
+        <div class="header-container">
+          <h1>Two Dices Statistics</h1>
+        </div>
+      </header>
+      <main>
+        <section class="diceNumber-section">
+          <div class="dice-container">
+            <div class="diceNumber-box box-left"></div>
+            <div class="diceNumber-box box-right"></div>
+          </div>
+        </section>
+
+        <section class="setting-section">
+          <div class="inner-container">
+            <p class="set-round">
+              Number of Rounds:
+              <input
+                type="number"
+                name="rounds"
+                id="rounds"
+                class="set-number"
+              />
+            </p>
+            <div class="run-button">
+              <button id="run-button">RUN</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="barChart-section">
+          <div class="inner-container">
+            <canvas id="barChartEvenOdd" width="400px" height="400px"></canvas>
+            <canvas id="barChartTotal" width="400px" height="400px"></canvas>
+          </div>
+        </section>
+
+        <section class="graph-section">
+          <div class="inner-container"></div>
+        </section>
+      </main>
+
+      <footer>
+        <p>&copy; CodeBros</p>
+      </footer>
+    </div>
+    <script type="module" src="https://code.jquery.com/jquery.min.js"></script>
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,124 @@
+// --------- base --------- //
+html,
+body {
+  box-sizing: border-box;
+}
+
+.container-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../img/backgroundImg1.jpeg");
+  background-size: cover;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+// --------- header --------- //
+header {
+  .header-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    h1 {
+      font-size: 90px;
+      text-align: center;
+    }
+  }
+}
+
+// --------- main --------- //
+main {
+  .diceNumber-section {
+    .dice-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+      margin-bottom: 50px;
+
+      .diceNumber-box {
+        border: 2px solid black;
+        height: 200px;
+        width: 200px;
+        font-size: 10rem;
+        text-align: center;
+        margin: 0 0.5rem;
+        padding-top: 1rem;
+      }
+    }
+  }
+
+  .setting-section {
+    .set-round {
+      font-size: 30px;
+      text-align: center;
+      .set-number {
+        height: 23px;
+        width: 100px;
+      }
+    }
+    .run-button {
+      text-align: center;
+      margin: 20px 0;
+      button {
+        font-size: 20px;
+        padding: 5px 10px;
+      }
+    }
+  }
+
+  .barChart-section {
+    .inner-container {
+      width: 100%;
+    }
+  }
+}
+
+// --------- footer --------- //
+footer {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  p {
+    font-size: 18px;
+    opacity: 0.6;
+  }
+}
+
+// responsive
+
+@media only screen and (max-width: 440px) {
+  // --------- header --------- //
+  header {
+    .header-container {
+      h1 {
+        font-size: 70px;
+      }
+    }
+  }
+
+  // --------- main --------- //
+  main {
+    .diceNumber-section {
+      .dice-container {
+        .diceNumber-box {
+          height: 150px;
+          width: 150px;
+          font-size: 8rem;
+        }
+      }
+    }
+
+    .setting-section {
+      .set-round {
+        font-size: 25px;
+      }
+    }
+
+    .barChart-section {
+      .inner-container {
+        width: 90%;
+        margin: 0 auto;
+      }
+    }
+  }
+} ;
