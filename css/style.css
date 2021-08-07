@@ -22,6 +22,7 @@ body {
   background-size: cover;
   padding-right: 20px;
   padding-left: 20px;
+  min-height: 100vh;
 }
 
 header .header-container {
@@ -75,10 +76,6 @@ main .setting-section .run-button button {
   padding: 5px 10px;
 }
 
-main .barChart-section .inner-container {
-  width: 100%;
-}
-
 footer {
   margin-top: 30px;
   margin-bottom: 20px;
@@ -100,10 +97,6 @@ footer p {
   }
   main .setting-section .set-round {
     font-size: 25px;
-  }
-  main .barChart-section .inner-container {
-    width: 90%;
-    margin: 0 auto;
   }
 }
 /*# sourceMappingURL=style.css.map */
